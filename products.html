@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e204ed81de.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <h1 class="heading">Printer World</h1>
+      </header>
+      <div class="navigation">
+        <nav class="navbar">
+          <ul>
+            <li class="nav" id="home"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="products.html">Products</a></li>
+            <li class="nav"><a href="upload.html">Upload Files</a></li>
+            <li class="nav"><a href="about.html">About us</a></li>
+            <li id="sign-in-header" class="nav showSign">
+              <a href="signup.html">Sign In</a>
+            </li>
+            <li id="account-header" class="nav hideSign">
+              <a href="account.html">Account</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="sidebar">
+      <h1 class="filter-heading">Filter:</h1>
+      <div class="filter-options">
+        <div class="filter">
+          <input
+            type="checkbox"
+            class="filter-checkbox"
+            name="filter"
+            id="filter-decor"
+            autocomplete="off"
+          />
+          <label for="decor" class="filter-label">Decor</label>
+        </div>
+        <div class="filter">
+          <input
+            type="checkbox"
+            class="filter-checkbox"
+            name="filter"
+            id="filter-tools"
+            autocomplete="off"
+          />
+          <label for="tools" class="filter-label">Tools</label>
+        </div>
+        <div class="filter">
+          <input
+            type="checkbox"
+            class="filter-checkbox"
+            name="filter"
+            id="filter-toys"
+            autocomplete="off"
+          />
+          <label for="toys" class="filter-label">Toys</label>
+        </div>
+      </div>
+    </div>
+    <div class="products">
+      <div class="product toys showProduct" id="astronaut">
+        <div class="product-header">
+          <h1>Astronaut</h1>
+        </div>
+        <div class="product-image-container">
+          <img
+            src="images/astronaut.3dpinted.jpg"
+            alt="Astronaut"
+            class="product-images"
+          />
+        </div>
+        <button class="product-inspection" id="astronaut-inspect">
+          View Product
+        </button>
+        <h1 class="price">$5.40-$9.90</h1>
+      </div>
+      <div class="product toys showProduct" id="robot">
+        <div class="product-header">
+          <h1>Robot</h1>
+        </div>
+        <div class="product-image-container">
+          <img
+            src="images/robot-3d-printing-15994.jpg"
+            alt="Robot"
+            class="product-images"
+          />
+        </div>
+        <button class="product-inspection" id="robot-inspect">
+          View Product
+        </button>
+        <h1 class="price" id="robotPrice">$15.00-$27.50</h1>
+      </div>
+      <div class="product tools showProduct" id="battery-holder">
+        <div class="product-header">
+          <h1>Battery Holder</h1>
+        </div>
+        <div class="product-image-container">
+          <img
+            src="images/affa9312a5e26c4139590fc2d8b9df89_display_large.webp"
+            alt="Battery Holder"
+            class="product-images"
+          />
+        </div>
+        <button class="product-inspection" id="battery-holder-inspect">
+          View Product
+        </button>
+        <h1 class="price">$3.00-$5.50</h1>
+      </div>
+      <div class="product decor showProduct" id="hex-coaster">
+        <div class="product-header">
+          <h1>Hexagon Coaster</h1>
+        </div>
+        <div class="product-image-container">
+          <img
+            src="images/large_display_Onderzetter_hexagon.webp"
+            alt="Coaster"
+            class="product-images"
+          />
+        </div>
+        <button class="product-inspection" id="hex-coaster-inspect">
+          View Product
+        </button>
+        <h1 class="price">$1.50-$2.75</h1>
+      </div>
+    </div>
+    <script defer src="products.js"></script>
+    <script defer src="app.js"></script>
+    <script defer src="signIn.js"></script>
+    <script defer src="filter.js"></script>
+  </body>
+</html>

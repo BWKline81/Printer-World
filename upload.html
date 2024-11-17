@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e204ed81de.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <h1 class="heading">Printer World</h1>
+      </header>
+      <div class="navigation">
+        <nav class="navbar">
+          <ul>
+            <li class="nav" id="home"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="products.html">Products</a></li>
+            <li class="nav"><a href="upload.html">Upload Files</a></li>
+            <li class="nav"><a href="about.html">About us</a></li>
+            <li id="sign-in-header" class="nav showSign">
+              <a href="signup.html">Sign In</a>
+            </li>
+            <li id="account-header" class="nav hideSign">
+              <a href="account.html">Account</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="upload-header">Upload Files</div>
+    <div class="upload">
+      <input
+        type="file"
+        id="file"
+        accept=".stl"
+        accept=".step"
+        accept="sldprt"
+        accept="stp"
+      />
+      <label for="file">Upload File</label>
+    </div>
+    <div class="accepted-files">
+      <h3 id="uploaded-files">Accepted Files: .stl, .step, .sldprt, .stp</h3>
+    </div>
+    <div class="select-upload">
+      <h2 class="colors-heading" id="colors-heading">Colors:</h2>
+      <div class="product-colors-select">
+        <br />
+        <button class="colors-button" title="Blue">
+          <div class="color blue" id="blue"></div>
+        </button>
+        <button class="colors-button" title="Red">
+          <div class="color red" id="red"></div>
+        </button>
+        <button class="colors-button" title="Yellow">
+          <div class="color yellow" id="yellow"></div>
+        </button>
+        <button class="colors-button" title="Greeb">
+          <div class="color green" id="green"></div>
+        </button>
+        <button class="colors-button" title="Orange">
+          <div class="color orange" id="orange"></div>
+        </button>
+        <button class="colors-button" title="Purple">
+          <div class="color purple" id="purple"></div>
+        </button>
+        <button class="colors-button" title="Grey">
+          <div class="color grey" id="grey"></div>
+        </button>
+        <button class="colors-button" title="White">
+          <div class="color white" id="white"></div>
+        </button>
+        <button class="colors-button" title="Black">
+          <div class="color black" id="black"></div>
+        </button>
+        <button class="colors-button" title="Pink">
+          <div class="color pink" id="pink"></div>
+        </button>
+        <button class="colors-button" title="Rainbow">
+          <div class="color rainbow" id="rainbow"></div>
+        </button>
+        <button class="colors-button" title="Gold">
+          <div class="color gold" id="gold"></div>
+        </button>
+      </div>
+      <h2 class="materials-heading" id="materials-heading">Materials:</h2>
+      <div class="materials-product-select">
+        <button class="materials-button" title="PLA">
+          <div class="material PLA" id="pla"></div>
+        </button>
+        <button class="materials-button" title="PETG">
+          <div class="material PETG" id="petg"></div>
+        </button>
+        <button class="materials-button" title="Wood PLA">
+          <div class="material Wood-PLA" id="wood-pla"></div>
+        </button>
+        <button class="materials-button" title="TPU">
+          <div class="material TPU" id="tpu"></div>
+        </button>
+        <button class="materials-button" title="Carbon Fiber PLA">
+          <div class="material Carbon-Fiber" id="carbon-fiber"></div>
+        </button>
+        <button class="materials-button" title="Stainless Steel PLA">
+          <div class="material Metal" id="metal"></div>
+        </button>
+      </div>
+    </div>
+    <div class="upload-button-container">
+      <button class="upload-button" id="submit-files">Submit Files</button>
+    </div>
+
+    <script defer src="upload.js"></script>
+    <script defer src="signIn.js"></script>
+  </body>
+</html>

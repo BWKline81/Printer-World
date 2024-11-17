@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e204ed81de.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <h1 class="heading">Printer World</h1>
+      </header>
+      <div class="navigation">
+        <nav class="navbar">
+          <ul>
+            <li class="nav" id="home"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="products.html">Products</a></li>
+            <li class="nav"><a href="upload.html">Upload Files</a></li>
+            <li class="nav"><a href="about.html">About us</a></li>
+            <li id="sign-in-header" class="nav showSign"><a href="signup.html">Sign In</a></li>
+            <li id="account-header"class="nav hideSign"><a href="account.html">Account</a></li>
+        </nav>
+      </div>
+    </div>
+    <div class="login-base" id="login-base">
+      <div class="login-header">
+        <h1>Sign In</h1>
+      </div>
+      <form id="signup-form">
+        <div class="login-email login-box">
+          <input type="email" id="email" class="login-input" required />
+          <label for="email" class="login-label">Email</label>
+        </div>
+        <div class="login-password login-box">
+          <input
+            type="password"
+            id="password"
+            class="login-input"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least 8 characters, 1 number, 1 uppercase letter, and 1 lowercase letter."
+            required
+          />
+          <label for="password" class="login-label">Password</label>
+        </div>
+        <div class="login-remember"><input type="checkbox" /> Remember Me</div>
+        <button type="submit" class="signin-submit" id="signInSubmit">
+          <a href="index.html">Sign In</a>
+        </button>
+      </form>
+      <div class="flip">
+        <button class="flip-button" id="flip">Sign Up</button>
+      </div>
+    </div>
+    <div class="sign-up-base" id="sign-up-base">
+      <div class="login-header">
+        <h1>Sign Up</h1>
+      </div>
+      <form id="signup-form">
+        <div class="login-email login-box">
+          <input type="email" id="emailUp" class="login-input" required />
+          <label for="email" class="login-label">Email</label>
+        </div>
+        <div class="login-password login-box">
+          <input
+            type="password"
+            id="passwordUp"
+            class="login-input"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least 8 characters, 1 number, 1 uppercase letter, and 1 lowercase letter."
+            required
+          />
+          <label for="password" class="login-label">Password</label>
+        </div>
+        <div class="login-remember"><input type="checkbox" /> Remember Me</div>
+        <button type="submit" class="signin-submit" id="signUpSubmit">
+          <a href="index.html">Sign Up</a>
+        </button>
+      </form>
+      <div class="flip">
+        <button class="flip-button" id="flipUp">Sign In</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script defer src="signIn.js"></script>
+  </body>
+</html>

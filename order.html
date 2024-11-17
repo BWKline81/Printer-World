@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="back" id="back">← Back</button>
+    <div class="order-heading">
+      <h1>Complete Your Order</h1>
+    </div>
+    <div class="order-form">
+      <form>
+        <div class="order-input">
+          <h2 id="order-price-form">Price: </h2>
+        </div>
+        <div class="order-input">
+          <label for="address">Address: </label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="123 Street, City, State, Zip"
+            required
+          />
+        </div>
+        <div class="order-input">
+          <label for="phone">Phone Number: </label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="123-456-7890"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          />
+        </div>
+        <div class="order-input">
+          <label for="payment">Payment Method: </label>
+        </div class="payments">
+        <div class="order-inputs">
+          <div>
+            <label for="visa">Visa: </label>
+            <input id="visa" name="payment" type="radio" value="Visa" required/>
+          </div>
+          <div class="payments">
+            <label for="mastercard">Mastercard: </label>
+            <input
+              id="mastercard"
+              name="payment"
+              type="radio"
+              value="Mastercard"
+              required
+            />
+          </div>
+          <div class="payments">
+            <label for="PayPal">PayPal: </label>
+            <input id="PayPal" name="payment" type="radio" value="PayPal" required/>
+          </div>
+          <div class="order-price"></div>
+        </div>
+        <div class="order-input">
+          <a href="products.html">
+            <input type="submit" value="Submit" class="submit-order" id="submit-order" />
+          </a>
+        </div>
+        <div class="order-input">
+          <input type="reset" value="Reset" class="submit-order" id="reset-order" />
+        </div>
+      </form>
+    </div>
+
+    <script defer src="products.js"></script>
+    <script defer src="order.js"></script>
+  </body>
+</html>
