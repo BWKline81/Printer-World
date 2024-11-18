@@ -11,7 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let password;
   /*localStorage.setItem("email", "None");
   localStorage.setItem("password", "None");*/
-  document.getElementById("name").textContent = localStorage.getItem("email");
+  let accountCheck = document.getElementById("name");
+  if (accountCheck) {
+    document.getElementById("name").textContent = localStorage.getItem("email");
+  }
 
   if (localStorage.getItem("email") !== "None") {
     document.getElementById("sign-in-header").classList.add("hideSign");
